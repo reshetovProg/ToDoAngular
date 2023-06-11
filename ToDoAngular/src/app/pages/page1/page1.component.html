@@ -1,3 +1,29 @@
-<div>{{title}}</div>
-<app-input></app-input>
-<app-task-block></app-task-block>
+<div class="input">
+    <input type="text" name="inputTask" placeholder="введите задачу" class="input-block left" [(ngModel)]="inputTask">
+    <button class="input-block right" (click)="addTask()">input</button>
+</div>
+
+
+<div class="tasks" *ngFor="let task of tasks" >
+    <div class="task" (click)="toggleStatus(task)">
+        <div class="task__status" [ngClass]="{'done' : task.status}" ></div>
+        <div class="task__content content">
+            <div class="content__head">
+                <div class="content__text">
+                    {{task.id}}. {{task.text}}
+                </div>
+            </div>
+            <div class="content__footer">
+                <div class="time time__start">
+                    start: {{task.timeStart| date: 'short'}}
+                </div>
+                <div class="time time__compete">
+                    compele: {{task.timeEnd| date: 'short'}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

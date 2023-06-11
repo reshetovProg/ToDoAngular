@@ -7,8 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { Page1Component } from './pages/page1/page1.component';
 import { Page2Component } from './pages/page2/page2.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { InputComponent } from './input/input.component';
-import { TaskBlockComponent } from './task-block/task-block.component';
+
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,12 @@ import { TaskBlockComponent } from './task-block/task-block.component';
     HeaderComponent,
     Page1Component,
     Page2Component,
-    NotFoundComponent,
-    InputComponent,
-    TaskBlockComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
