@@ -1,0 +1,53 @@
+.input{
+    display: flex;
+    justify-content: center;
+}
+.input-block{
+    font-size: 24px;
+    padding: 10px;
+    height: 40px;
+    background-color: azure;
+    border: none;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,100,0.1);
+
+}
+.left{
+    border-radius: 12px 0 0 12px;
+}
+.right{
+    font-size: 18px;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+.right:active{
+    background-color: aquamarine;
+    color: white;
+}
+.input {
+	display: flex;
+	justify-content: center;
+}
+
+.input-block {
+	font-size: 24px;
+	padding: 0 10px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	box-shadow: 0px 0px 24px 0px rgba(48, 48, 70, 0.138);
+}
+
+.left {
+	border-radius: 12px 0 0 12px;
+}
+
+.right {
+	font-size: 18px;
+	border-radius: 0 12px 12px 0;
+	cursor: pointer;
+}
+
+.right:active {
+	background-color: #555555;
+	color: white;
+}
